@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="assets/images/logo.jpeg" alt="Logo Smart Control">
+    <h1>Cadastro de Usuário</h1>
+</header>
+
+<main>
+    <form action="dashboard.html" method="get">
+
+        <div>
+            <label for="nome">Nome Completo:</label><br>
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">E-mail Corporativo:</label><br>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="exemplo@empresa.com"
+                required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="senha">Senha:</label><br>
+            <input
+                type="password"
+                id="senha"
+                name="senha"
+                minlength="8"
+                placeholder="Mínimo 8 caracteres"
+                required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="nivel">Nível de Acesso:</label><br>
+            <select id="nivel" name="nivel" required>
+                <option value="">Selecione</option>
+                <option value="administrador">Administrador</option>
+                <option value="funcionario">Funcionário</option>
+                <option value="visitante">Visitante</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <input
+                type="checkbox"
+                id="termos"
+                name="termos"
+                required>
+
+            <label for="termos">
+                Aceito os Termos de Uso
+            </label>
+        </div>
+
+        <br>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+    <br>
+
+    <a href="login.html">Voltar ao Login</a>
+</main>
+
+<footer>
+
+    <h3>Localização da Empresa</h3>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5593856351455!2d-46.6565714!3d-23.5624147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c5f67fdb79%3A0x3f76efb5d88b0d59!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+        width="400"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</footer>
+
+</body>
+</html>
