@@ -1,18 +1,15 @@
-/* Reset Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
 body {
     background-color: #050b35;
     font-family: Arial, sans-serif;
     color: white;
 }
 
-/* Cabeçalho */
 header {
     position: fixed;
     top: 0;
@@ -26,12 +23,10 @@ header {
     z-index: 1000;
 }
 
-/* Título */
 header h1 {
     font-size: 25px;
 }
 
-/* Botão do menu */
 header button {
     font-size: 35px;
     background-color: #777;
@@ -41,13 +36,11 @@ header button {
     padding: 5px 12px;
 }
 
-/* Conteúdo principal */
 main {
     padding-top: 180px;
     padding-bottom: 80px;
 }
 
-/* Lista dos cartões */
 ul {
     display: flex;
     justify-content: space-around;
@@ -57,7 +50,6 @@ ul {
     padding: 0 40px;
 }
 
-/* Cartões */
 li {
     position: relative;
     width: 250px;
@@ -66,7 +58,6 @@ li {
     text-align: center;
 }
 
-/* Título dos cartões */
 li h2 {
     background-color: #777;
     padding: 20px 10px;
@@ -74,7 +65,6 @@ li h2 {
     min-height: 70px;
 }
 
-/* Área branca do gráfico */
 .conteudo {
     background-color: white;
     color: #222;
@@ -84,13 +74,11 @@ li h2 {
     padding: 15px;
 }
 
-/* Texto "Consumo de energia" */
 .conteudo h3 {
     font-size: 18px;
     font-weight: normal;
 }
 
-/* Gráfico */
 .grafico {
     height: 120px;
     display: flex;
@@ -100,14 +88,12 @@ li h2 {
     margin-top: 10px;
 }
 
-/* Barras */
 .barra {
     width: 30px;
     background-color: #ffe600;
     border: 1px solid #d6c300;
 }
 
-/* Tamanhos diferentes das barras */
 .barra1 {
     height: 80px;
 }
@@ -120,7 +106,6 @@ li h2 {
     height: 65px;
 }
 
-/* Badge */
 .badge {
     position: absolute;
     top: 10px;
