@@ -1,0 +1,133 @@
+/* Reset Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    background-color: #050b35;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #1748a8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+/* Título */
+header h1 {
+    font-size: 25px;
+}
+
+/* Botão do menu */
+header button {
+    font-size: 35px;
+    background-color: #777;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 12px;
+}
+
+/* Conteúdo principal */
+main {
+    padding-top: 180px;
+    padding-bottom: 80px;
+}
+
+/* Lista dos cartões */
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+    list-style: none;
+    padding: 0 40px;
+}
+
+/* Cartões */
+li {
+    position: relative;
+    width: 250px;
+    min-height: 300px;
+    background-color: #08c5c9;
+    text-align: center;
+}
+
+/* Título dos cartões */
+li h2 {
+    background-color: #777;
+    padding: 20px 10px;
+    font-size: 22px;
+    min-height: 70px;
+}
+
+/* Área branca do gráfico */
+.conteudo {
+    background-color: white;
+    color: #222;
+    width: 80%;
+    height: 190px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* Texto "Consumo de energia" */
+.conteudo h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Gráfico */
+.grafico {
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Barras */
+.barra {
+    width: 30px;
+    background-color: #ffe600;
+    border: 1px solid #d6c300;
+}
+
+/* Tamanhos diferentes das barras */
+.barra1 {
+    height: 80px;
+}
+
+.barra2 {
+    height: 45px;
+}
+
+.barra3 {
+    height: 65px;
+}
+
+/* Badge */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
