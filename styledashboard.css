@@ -117,3 +117,62 @@ li h2 {
     border-radius: 10px;
     font-size: 12px;
 }
+
+@media (max-width: 600px) {
+
+    header {
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header button {
+        font-size: 25px;
+        padding: 4px 9px;
+    }
+
+    main {
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    li {
+        width: 100%;
+        max-width: 320px;
+        min-height: 300px;
+    }
+
+    li h2 {
+        font-size: 20px;
+        padding: 15px 10px;
+    }
+
+    .conteudo {
+        width: 85%;
+        height: 190px;
+    }
+
+    .grafico {
+        gap: 12px;
+    }
+
+    .barra {
+        width: 25px;
+    }
+
+    .badge {
+        top: 8px;
+        right: 8px;
+        font-size: 11px;
+    }
+}
