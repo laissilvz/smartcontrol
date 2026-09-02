@@ -6,68 +6,119 @@
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <title>Dashboard Geral</title>
 </head>
+
 <body>
+
     <header>
         <h1>💡 Dashboard Geral</h1>
-        <button>☰</button>
+
+        <div class="acoes">
+            <button id="temaBtn" type="button">🌙 Dark Mode</button>
+            <button id="menuBtn" type="button">☰</button>
+        </div>
     </header>
+
+    <aside id="menuLateral" class="menu-lateral">
+
+        <button id="fecharMenu" type="button">✕</button>
+
+        <h2>Menu</h2>
+
+        <button>Escolher cômodo</button>
+        <button>Gerenciar dispositivos</button>
+        <button>Desconectar-ser</button>
+
+    </aside>
 
     <main>
 
         <h2 id="saudacao"></h2>
 
-        <ul>
+        <div class="busca">
+            <label for="campoBusca">Buscar cômodo:</label>
+            <input
+                type="text"
+                id="campoBusca"
+                placeholder="Digite o nome do cômodo..."
+            >
+        </div>
+
+        <p id="resultadoBusca"></p>
+
+        <ul id="listaComodos">
+
             <li>
                 <h2>Quarto Principal</h2>
+
                 <div class="conteudo">
                     <h3>Consumo de energia</h3>
+
                     <div class="grafico">
                         <div class="barra barra1"></div>
                         <div class="barra barra2"></div>
                         <div class="barra barra3"></div>
                     </div>
                 </div>
+
                 <span class="badge">Ativo</span>
             </li>
+
+
             <li>
                 <h2>Sala</h2>
+
                 <div class="conteudo">
                     <h3>Consumo de energia</h3>
+
                     <div class="grafico">
                         <div class="barra barra1"></div>
                         <div class="barra barra2"></div>
                         <div class="barra barra3"></div>
                     </div>
                 </div>
+
                 <span class="badge">Ativo</span>
             </li>
+
+
             <li>
                 <h2>Cozinha</h2>
+
                 <div class="conteudo">
                     <h3>Consumo de energia</h3>
+
                     <div class="grafico">
                         <div class="barra barra1"></div>
                         <div class="barra barra2"></div>
                         <div class="barra barra3"></div>
                     </div>
                 </div>
+
                 <span class="badge">3 Alertas</span>
             </li>
+
+
             <li>
                 <h2>Outros Comodos</h2>
+
                 <div class="conteudo">
                     <h3>Consumo de energia</h3>
+
                     <div class="grafico">
                         <div class="barra barra1"></div>
                         <div class="barra barra2"></div>
                         <div class="barra barra3"></div>
                     </div>
                 </div>
+
                 <span class="badge">Ativo</span>
             </li>
+
         </ul>
+
     </main>
 
-     <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
