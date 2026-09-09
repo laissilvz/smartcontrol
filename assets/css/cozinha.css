@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: white;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =================================
+   FUNDO PRINCIPAL
+================================= */
+
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+    background: #050875;
+    overflow: hidden;
+}
+
+
+/* =================================
+   CABEÇALHO
+================================= */
+
+.header {
+    width: 100%;
+    height: 177px;
+
+    background: #4f86c6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px 0 39px;
+}
+
+
+/* LADO ESQUERDO */
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+
+
+/* LÂMPADA */
+
+.lampada {
+    width: 91px;
+    height: 91px;
+
+    border-radius: 50%;
+
+    background: #4b4b3f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 43px;
+}
+
+
+/* DASHBOARD */
+
+.header h1 {
+    color: white;
+
+    font-size: 31px;
+    font-weight: bold;
+}
+
+
+/* LADO DIREITO */
+
+.header-right {
+    display: flex;
+    align-items: center;
+
+    gap: 57px;
+}
+
+.header-right span {
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* =================================
+   BOTÃO MENU
+================================= */
+
+.menu-button {
+    width: 77px;
+    height: 80px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #777;
+
+    padding: 11px 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.menu-button i {
+    display: block;
+
+    width: 54px;
+    height: 11px;
+
+    border-radius: 9px;
+
+    background: white;
+}
+
+
+/* =================================
+   ÁREA PRINCIPAL
+================================= */
+
+.main {
+    width: 100%;
+
+    min-height: calc(100vh - 177px);
+
+    display: grid;
+
+    grid-template-columns: 50.8% 49.2%;
+}
+
+
+/* =================================
+   LADO ESQUERDO
+================================= */
+
+.left-panel {
+    min-height: calc(100vh - 177px);
+
+    padding: 29px 38px 50px 47px;
+
+    border-right: 8px solid white;
+}
+
+.left-panel h2,
+.right-panel h2 {
+    color: white;
+
+    font-size: 31px;
+
+    line-height: 1.1;
+
+    font-weight: bold;
+
+    margin-bottom: 29px;
+}
+
+
+/* =================================
+   APARELHOS
+================================= */
+
+.devices {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 38px;
+
+    padding-left: 7px;
+}
+
+
+/* =================================
+   BOTÕES
+================================= */
+
+.device {
+    width: 250px;
+    height: 87px;
+
+    border: none;
+
+    background: #66b5e8;
+
+    color: white;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 0 20px;
+
+    cursor: pointer;
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+}
+
+.device:hover {
+    filter: brightness(1.08);
+}
+
+.device:active {
+    transform: scale(0.99);
+}
+
+
+/* =================================
+   LADO DIREITO
+================================= */
+
+.right-panel {
+    min-height: calc(100vh - 177px);
+
+    padding: 30px 40px 50px 39px;
+}
+
+
+/* =================================
+   GRÁFICOS
+================================= */
+
+.charts {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 70px;
+
+    row-gap: 34px;
+
+    align-items: start;
+}
+
+
+/* =================================
+   CAIXAS
+================================= */
+
+.chart-box {
+    width: 100%;
+
+    background: #f5f5f5;
+
+    color: #333;
+}
+
+
+/* =================================
+   PIZZA
+================================= */
+
+.pie-box {
+    height: 193px;
+
+    padding: 7px 8px 5px;
+}
+
+.chart-title {
+    font-size: 19px;
+
+    line-height: 1.02;
+
+    font-weight: normal;
+}
+
+
+/* =================================
+   GRÁFICO DE PIZZA
+================================= */
+
+.pie-chart {
+    width: 128px;
+    height: 128px;
+
+    border-radius: 50%;
+
+    margin: 2px auto 0;
+
+    background:
+        conic-gradient(
+            #12d6d6 0deg 120deg,
+            #ffd900 120deg 240deg,
+            #3cff00 240deg 360deg
+        );
+
+    border: 1px solid #777;
+}
+
+
+/* =================================
+   LEGENDA
+================================= */
+
+.legend {
+    margin-top: -1px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    color: #333;
+
+    white-space: nowrap;
+}
+
+.legend span {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 2px;
+}
+
+.legend b {
+    width: 9px;
+    height: 9px;
+
+    display: inline-block;
+}
+
+
+/* CORES */
+
+.green {
+    background: #3cff00;
+}
+
+.yellow {
+    background: #ffd900;
+}
+
+.cyan {
+    background: #12d6d6;
+}
+
+
+/* =================================
+   GRÁFICOS DE BARRAS
+================================= */
+
+.bar-box {
+    height: 193px;
+
+    padding: 8px 10px 4px;
+}
+
+.bars {
+    height: 146px;
+
+    margin-top: -1px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-around;
+
+    padding: 0 5px 10px;
+}
+
+
+.bar-container {
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    width: 30%;
+}
+
+
+.bar {
+    width: 35px;
+
+    background: #ffd900;
+
+    border: 1px solid #777;
+
+    margin-bottom: 5px;
+}
+
+
+.bar-container span {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    white-space: nowrap;
+
+    color: #333;
+}
+
+
+/* =================================
+   ALTURA DAS BARRAS
+================================= */
+
+/* Horário de pico */
+
+.bar-1 {
+    height: 63px;
+}
+
+.bar-2 {
+    height: 91px;
+}
+
+.bar-3 {
+    height: 25px;
+}
+
+
+/* Tempo de uso */
+
+.bar-4 {
+    height: 62px;
+}
+
+.bar-5 {
+    height: 35px;
+}
+
+.bar-6 {
+    height: 94px;
+}
+
+
+/* =================================
+   TEMPO DE USO
+================================= */
+
+.time-box {
+    grid-column: 1;
+}
+
+
+/* =================================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .header {
+        height: 130px;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .left-panel {
+        border-right: none;
+
+        border-bottom: 8px solid white;
+
+        min-height: auto;
+    }
+
+    .right-panel {
+        min-height: auto;
+    }
+
+    .header-right span {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .header-left {
+        gap: 15px;
+    }
+
+    .lampada {
+        width: 62px;
+        height: 62px;
+
+        font-size: 30px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .header-right span {
+        display: none;
+    }
+
+    .menu-button {
+        width: 62px;
+        height: 66px;
+    }
+
+    .menu-button i {
+        width: 44px;
+    }
+
+    .left-panel,
+    .right-panel {
+        padding: 25px 18px 35px;
+    }
+
+    .left-panel h2,
+    .right-panel h2 {
+        font-size: 25px;
+    }
+
+    .devices {
+        gap: 20px;
+    }
+
+    .charts {
+        grid-template-columns: 1fr;
+    }
+
+    .time-box {
+        grid-column: auto;
+    }
+}
