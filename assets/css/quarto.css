@@ -11,160 +11,143 @@ body {
 }
 
 body {
-    background: white;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Arial, sans-serif;
+    background: #050875;
+    color: white;
+    min-height: 100vh;
 }
 
 
-/* =================================
+/* =========================
    FUNDO PRINCIPAL
-================================= */
+========================= */
 
 .dashboard {
     width: 100%;
     min-height: 100vh;
-
     background: #050875;
-
-    overflow: hidden;
 }
 
 
-/* =================================
+/* =========================
    CABEÇALHO
-================================= */
+========================= */
 
 .header {
     width: 100%;
-    height: 177px;
-
+    height: 100px;
     background: #4f86c6;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 24px 0 39px;
+    padding: 0 35px;
 }
 
 
-/* =================================
+/* =========================
    LADO ESQUERDO
-================================= */
+========================= */
 
 .header-left {
     display: flex;
     align-items: center;
-
-    gap: 31px;
+    gap: 20px;
 }
 
 
-/* =================================
+/* =========================
    LÂMPADA
-================================= */
+========================= */
 
 .lampada {
-    width: 91px;
-    height: 91px;
+    width: 65px;
+    height: 65px;
 
+    background: #050505;
     border-radius: 50%;
-
-    background: #4b4b3f;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-family: Arial, sans-serif;
-
-    font-size: 43px;
+    font-size: 35px;
 }
 
 
-/* =================================
-   DASHBOARD
-================================= */
+/* =========================
+   TÍTULO
+========================= */
 
 .header h1 {
     color: white;
-
-    font-size: 31px;
-
+    font-size: 30px;
     font-weight: bold;
 }
 
 
-/* =================================
+/* =========================
    LADO DIREITO
-================================= */
+========================= */
 
 .header-right {
     display: flex;
     align-items: center;
-
-    gap: 57px;
+    gap: 12px;
 }
 
 .header-right span {
     color: white;
-
-    font-size: 28px;
-
+    font-size: 21px;
     font-weight: bold;
-
     white-space: nowrap;
 }
 
 
-/* =================================
+/* =========================
    BOTÃO MENU
-================================= */
+========================= */
 
 .menu-button {
-    width: 77px;
-    height: 80px;
+    width: 55px;
+    height: 50px;
 
     border: none;
-
-    border-radius: 9px;
+    border-radius: 8px;
 
     background: #777;
 
-    padding: 11px 10px;
+    padding: 7px 8px;
 
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-around;
-
     align-items: center;
 
     cursor: pointer;
 }
 
-
 .menu-button i {
     display: block;
 
-    width: 54px;
-    height: 11px;
+    width: 39px;
+    height: 7px;
 
-    border-radius: 9px;
+    border-radius: 8px;
 
     background: white;
 }
 
 
-/* =================================
+/* =========================
    ÁREA PRINCIPAL
-================================= */
+========================= */
 
 .main {
     width: 100%;
 
-    min-height: calc(100vh - 177px);
+    min-height: calc(100vh - 100px);
 
     display: grid;
 
@@ -172,63 +155,59 @@ body {
 }
 
 
-/* =================================
+/* =========================
    LADO ESQUERDO
-================================= */
+========================= */
 
 .left-panel {
-    min-height: calc(100vh - 177px);
+    min-height: calc(100vh - 100px);
 
-    padding: 29px 38px 50px 47px;
+    padding: 35px 45px;
 
     border-right: 8px solid white;
 }
 
 
+/* =========================
+   TÍTULOS
+========================= */
+
 .left-panel h2,
 .right-panel h2 {
-
     color: white;
 
-    font-size: 31px;
+    font-size: 21px;
 
     line-height: 1.1;
 
     font-weight: bold;
 
-    margin-bottom: 29px;
+    margin-bottom: 20px;
 }
 
 
-/* =================================
+/* =========================
    APARELHOS
-================================= */
+========================= */
 
 .devices {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
-    column-gap: 79px;
+    gap: 35px;
 
-    row-gap: 59px;
-
-    padding-left: 7px;
-
-    padding-right: 7px;
+    padding: 0;
 }
 
 
-/* =================================
-   BOTÕES
-================================= */
+/* =========================
+   BOTÕES DOS APARELHOS
+========================= */
 
 .device {
-
     width: 100%;
-
-    height: 105px;
+    height: 85px;
 
     border: none;
 
@@ -236,66 +215,59 @@ body {
 
     color: white;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Arial, sans-serif;
 
-    font-size: 24px;
+    font-size: 16px;
 
     font-weight: bold;
 
     text-align: left;
 
-    padding: 0 20px;
+    padding: 0 15px;
 
     cursor: pointer;
 
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
 }
 
-
 .device:hover {
     filter: brightness(1.08);
 }
-
 
 .device:active {
     transform: scale(0.99);
 }
 
 
-/* =================================
+/* =========================
    LADO DIREITO
-================================= */
+========================= */
 
 .right-panel {
+    min-height: calc(100vh - 100px);
 
-    min-height: calc(100vh - 177px);
-
-    padding: 30px 40px 50px 39px;
+    padding: 35px 45px;
 }
 
 
-/* =================================
+/* =========================
    GRÁFICOS
-================================= */
+========================= */
 
 .charts {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
-    column-gap: 70px;
-
-    row-gap: 34px;
+    gap: 35px;
 }
 
 
-/* =================================
+/* =========================
    CAIXAS
-================================= */
+========================= */
 
 .chart-box {
-
     width: 100%;
 
     background: #f5f5f5;
@@ -304,41 +276,38 @@ body {
 }
 
 
-/* =================================
-   PIZZA
-================================= */
+/* =========================
+   GRÁFICO DE PIZZA
+========================= */
 
 .pie-box {
+    height: 190px;
 
-    height: 193px;
-
-    padding: 7px 8px 5px;
+    padding: 15px;
 }
 
-
 .chart-title {
+    font-family: Arial, sans-serif;
 
-    font-size: 19px;
+    font-size: 14px;
 
-    line-height: 1.02;
+    line-height: 1.1;
 
     font-weight: normal;
 }
 
 
-/* =================================
-   GRÁFICO DE PIZZA
-================================= */
+/* =========================
+   PIZZA
+========================= */
 
 .pie-chart {
-
-    width: 128px;
-
-    height: 128px;
+    width: 120px;
+    height: 120px;
 
     border-radius: 50%;
 
-    margin: 2px auto 0;
+    margin: 5px auto 0;
 
     background:
         conic-gradient(
@@ -351,13 +320,12 @@ body {
 }
 
 
-/* =================================
+/* =========================
    LEGENDA
-================================= */
+========================= */
 
 .legend {
-
-    margin-top: -1px;
+    margin-top: 3px;
 
     display: flex;
 
@@ -367,7 +335,7 @@ body {
 
     gap: 7px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 
     font-size: 7px;
 
@@ -376,9 +344,7 @@ body {
     white-space: nowrap;
 }
 
-
 .legend span {
-
     display: inline-flex;
 
     align-items: center;
@@ -386,20 +352,17 @@ body {
     gap: 2px;
 }
 
-
 .legend b {
-
     width: 9px;
-
     height: 9px;
 
     display: inline-block;
 }
 
 
-/* =================================
+/* =========================
    CORES
-================================= */
+========================= */
 
 .green {
     background: #3cff00;
@@ -414,23 +377,20 @@ body {
 }
 
 
-/* =================================
+/* =========================
    GRÁFICOS DE BARRAS
-================================= */
+========================= */
 
 .bar-box {
+    height: 190px;
 
-    height: 193px;
-
-    padding: 8px 10px 4px;
+    padding: 15px;
 }
 
-
 .bars {
+    height: 145px;
 
-    height: 146px;
-
-    margin-top: -1px;
+    margin-top: 0;
 
     display: flex;
 
@@ -441,9 +401,7 @@ body {
     padding: 0 5px 10px;
 }
 
-
 .bar-container {
-
     height: 100%;
 
     display: flex;
@@ -457,9 +415,7 @@ body {
     width: 30%;
 }
 
-
 .bar {
-
     width: 35px;
 
     background: #ffd900;
@@ -469,10 +425,8 @@ body {
     margin-bottom: 5px;
 }
 
-
 .bar-container span {
-
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 
     font-size: 7px;
 
@@ -482,11 +436,9 @@ body {
 }
 
 
-/* =================================
+/* =========================
    ALTURA DAS BARRAS
-================================= */
-
-/* Horário de pico */
+========================= */
 
 .bar-1 {
     height: 63px;
@@ -499,9 +451,6 @@ body {
 .bar-3 {
     height: 25px;
 }
-
-
-/* Tempo de uso */
 
 .bar-4 {
     height: 62px;
@@ -516,23 +465,23 @@ body {
 }
 
 
-/* =================================
+/* =========================
    TEMPO DE USO
-================================= */
+========================= */
 
 .time-box {
     grid-column: 1;
 }
 
 
-/* =================================
+/* =========================
    RESPONSIVIDADE
-================================= */
+========================= */
 
 @media (max-width: 1000px) {
 
     .header {
-        height: 130px;
+        height: 100px;
     }
 
     .main {
@@ -540,7 +489,6 @@ body {
     }
 
     .left-panel {
-
         border-right: none;
 
         border-bottom: 8px solid white;
@@ -553,7 +501,7 @@ body {
     }
 
     .header-right span {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
@@ -569,15 +517,14 @@ body {
     }
 
     .lampada {
+        width: 50px;
+        height: 50px;
 
-        width: 62px;
-        height: 62px;
-
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .header h1 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .header-right span {
@@ -585,23 +532,22 @@ body {
     }
 
     .menu-button {
-
-        width: 62px;
-        height: 66px;
+        width: 55px;
+        height: 50px;
     }
 
     .menu-button i {
-        width: 44px;
+        width: 39px;
     }
 
     .left-panel,
     .right-panel {
-        padding: 25px 18px 35px;
+        padding: 25px 15px 35px;
     }
 
     .left-panel h2,
     .right-panel h2 {
-        font-size: 25px;
+        font-size: 21px;
     }
 
     .devices,

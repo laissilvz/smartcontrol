@@ -5,12 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quarto Principal - Dashboard</title>
-
+    <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/quarto.css">
 </head>
 
 <body>
 
+    <!-- FUNDO ESCURO DO MENU -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- MENU PRINCIPAL -->
+    <div class="side-menu" id="sideMenu">
+
+        <button class="close-menu" id="closeMenu" type="button">
+            ✕
+        </button>
+
+        <h2>Menu</h2>
+
+        <button class="menu-option" id="escolherComodo" type="button">
+            Escolher cômodo
+        </button>
+
+        <button class="menu-option" type="button">
+            Gerenciar dispositivos
+        </button>
+
+        <button class="menu-option" type="button">
+            Desconectar-se
+        </button>
+
+    </div>
+
+    <!-- MENU DE CÔMODOS -->
+    <div class="room-menu" id="roomMenu">
+
+        <button class="close-menu" id="closeRoomMenu" type="button">
+            ✕
+        </button>
+
+        <h2>Escolher cômodo</h2>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='quarto.html'">
+            Quarto<br>
+            Principal
+        </button>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='sala.html'">
+            Sala
+        </button>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='cozinha.html'">
+            Cozinha
+        </button>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='dashboard.html'">
+            Dashboard<br>
+            Geral
+        </button>
+
+    </div>
+
+    <!-- DASHBOARD -->
     <div class="dashboard">
 
         <!-- CABEÇALHO -->
@@ -26,12 +86,12 @@
 
             </div>
 
-
             <div class="header-right">
 
                 <span>Quarto Principal -</span>
 
-                <button class="menu-button">
+                <!-- BOTÃO HAMBÚRGUER -->
+                <button class="menu-button" type="button" onclick="abrirMenu()">
                     <i></i>
                     <i></i>
                     <i></i>
@@ -41,16 +101,13 @@
 
         </header>
 
-
         <!-- ÁREA PRINCIPAL -->
         <main class="main">
-
 
             <!-- LADO ESQUERDO -->
             <section class="left-panel">
 
                 <h2>Aparelhos do comodo -</h2>
-
 
                 <div class="devices">
 
@@ -74,8 +131,6 @@
 
             </section>
 
-
-
             <!-- LADO DIREITO -->
             <section class="right-panel">
 
@@ -83,12 +138,9 @@
                     Dados de Uso - Ar condicionado
                 </h2>
 
-
                 <div class="charts">
 
-
                     <!-- CONSUMO DE ENERGIA -->
-
                     <div class="chart-box pie-box">
 
                         <div class="chart-title">
@@ -96,9 +148,7 @@
                             de energia
                         </div>
 
-
                         <div class="pie-chart"></div>
-
 
                         <div class="legend">
 
@@ -121,17 +171,13 @@
 
                     </div>
 
-
-
                     <!-- HORÁRIO DE PICO -->
-
                     <div class="chart-box bar-box">
 
                         <div class="chart-title">
                             Horário de pico de<br>
                             uso
                         </div>
-
 
                         <div class="bars">
 
@@ -140,12 +186,10 @@
                                 <span>Usuário 1</span>
                             </div>
 
-
                             <div class="bar-container">
                                 <div class="bar bar-2"></div>
                                 <span>Usuário 2</span>
                             </div>
-
 
                             <div class="bar-container">
                                 <div class="bar bar-3"></div>
@@ -156,16 +200,12 @@
 
                     </div>
 
-
-
                     <!-- TEMPO DE USO -->
-
                     <div class="chart-box bar-box time-box">
 
                         <div class="chart-title">
                             Tempo de Uso
                         </div>
-
 
                         <div class="bars">
 
@@ -174,12 +214,10 @@
                                 <span>Usuário 1</span>
                             </div>
 
-
                             <div class="bar-container">
                                 <div class="bar bar-5"></div>
                                 <span>Usuário 2</span>
                             </div>
-
 
                             <div class="bar-container">
                                 <div class="bar bar-6"></div>
@@ -197,6 +235,9 @@
         </main>
 
     </div>
+
+    <!-- JAVASCRIPT DO MENU -->
+    <script src="js/menu.js"></script>
 
 </body>
 

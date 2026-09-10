@@ -5,18 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sala - Dashboard</title>
-    <link rel="stylesheet" href="menu.css">
+
+    <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/sala.css">
 </head>
 
 <body>
 
+    <!-- FUNDO ESCURO DO MENU -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- MENU PRINCIPAL -->
+    <div class="side-menu" id="sideMenu">
+
+        <button class="close-menu" id="closeMenu" type="button">
+            ✕
+        </button>
+
+        <h2>Menu</h2>
+
+        <button class="menu-option" id="escolherComodo" type="button">
+            Escolher cômodo
+        </button>
+
+        <button class="menu-option" type="button">
+            Gerenciar dispositivos
+        </button>
+
+        <button class="menu-option" type="button">
+            Desconectar-se
+        </button>
+
+    </div>
+
+    <!-- MENU DE CÔMODOS -->
+    <div class="room-menu" id="roomMenu">
+
+        <button class="close-menu" id="closeRoomMenu" type="button">
+            ✕
+        </button>
+
+        <h2>Escolher cômodo</h2>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='quarto.html'">
+            Quarto<br>
+            Principal
+        </button>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='sala.html'">
+            Sala
+        </button>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='cozinha.html'">
+            Cozinha
+        </button>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='dashboard.html'">
+            Dashboard<br>
+            Geral
+        </button>
+
+    </div>
+
     <div class="dashboard">
 
-        <!-- =========================
-             CABEÇALHO
-        ========================== -->
-
+        <!-- CABEÇALHO -->
         <header class="header">
 
             <div class="header-left">
@@ -29,39 +86,28 @@
 
             </div>
 
-
             <div class="header-right">
 
                 <span>Sala -</span>
 
-                <button class="menu-button">
-
+                <!-- BOTÃO HAMBÚRGUER -->
+                <button class="menu-button" type="button" onclick="abrirMenu()">
                     <i></i>
                     <i></i>
                     <i></i>
-
                 </button>
 
             </div>
 
         </header>
 
-
-        <!-- =========================
-             CONTEÚDO PRINCIPAL
-        ========================== -->
-
+        <!-- CONTEÚDO PRINCIPAL -->
         <main class="main">
 
-
-            <!-- =========================
-                 LADO ESQUERDO
-            ========================== -->
-
+            <!-- LADO ESQUERDO -->
             <section class="left-panel">
 
                 <h2>Aparelhos do Cômodo</h2>
-
 
                 <div class="devices">
 
@@ -69,42 +115,35 @@
                         SMART TV SAMSUNG
                     </button>
 
-
                     <button class="device">
                         ROBÔ ASPIRADOR DE<br>
                         PÓ
                     </button>
-
 
                     <button class="device">
                         AR CONDICIONADO<br>
                         ELECTROLUX
                     </button>
 
-
                     <button class="device">
                         PERSIANA ELÉTRICA<br>
                         MOTORIZADA
                     </button>
-
 
                     <button class="device">
                         LÂMPADA SMART<br>
                         INTELIGENTE
                     </button>
 
-
                     <button class="device">
                         INTERRUPTOR<br>
                         INTELIGENTE
                     </button>
 
-
                     <button class="device">
                         CONTROLE REMOTO<br>
                         INTELIGENTE
                     </button>
-
 
                     <button class="device">
                         POLTRONA ELÉTRICA<br>
@@ -115,24 +154,16 @@
 
             </section>
 
-
-
-            <!-- =========================
-                 LADO DIREITO
-            ========================== -->
-
+            <!-- LADO DIREITO -->
             <section class="right-panel">
 
                 <h2>
                     Dados de Uso - Robô aspirador de pó
                 </h2>
 
-
                 <div class="charts">
 
-
                     <!-- GRÁFICO DE PIZZA -->
-
                     <div class="chart-box pie-box">
 
                         <div class="chart-title">
@@ -140,9 +171,7 @@
                             de energia
                         </div>
 
-
                         <div class="pie-chart"></div>
-
 
                         <div class="legend">
 
@@ -165,17 +194,13 @@
 
                     </div>
 
-
-
                     <!-- SEGUNDO GRÁFICO -->
-
                     <div class="chart-box bar-box">
 
                         <div class="chart-title">
                             Consumo<br>
                             de energia
                         </div>
-
 
                         <div class="bars">
 
@@ -184,12 +209,10 @@
                                 <span>Usuário 1</span>
                             </div>
 
-
                             <div class="bar-container">
                                 <div class="bar bar-2"></div>
                                 <span>Usuário 2</span>
                             </div>
-
 
                             <div class="bar-container">
                                 <div class="bar bar-3"></div>
@@ -200,17 +223,13 @@
 
                     </div>
 
-
-
                     <!-- TERCEIRO GRÁFICO -->
-
                     <div class="chart-box bar-box">
 
                         <div class="chart-title">
                             Horário de pico de<br>
                             uso
                         </div>
-
 
                         <div class="bars">
 
@@ -219,12 +238,10 @@
                                 <span>Usuário 1</span>
                             </div>
 
-
                             <div class="bar-container">
                                 <div class="bar bar-5"></div>
                                 <span>Usuário 2</span>
                             </div>
-
 
                             <div class="bar-container">
                                 <div class="bar bar-6"></div>
@@ -242,6 +259,9 @@
         </main>
 
     </div>
+
+    <!-- JAVASCRIPT DO MENU -->
+    <script src="js/menu.js"></script>
 
 </body>
 

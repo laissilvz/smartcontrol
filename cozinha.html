@@ -5,11 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozinha - Dashboard</title>
+
+    <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/cozinha.css">
-    <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
+
+    <!-- FUNDO ESCURO DO MENU -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- MENU PRINCIPAL -->
+    <div class="side-menu" id="sideMenu">
+
+        <button class="close-menu" id="closeMenu" type="button">
+            ✕
+        </button>
+
+        <h2>Menu</h2>
+
+        <button class="menu-option" id="escolherComodo" type="button">
+            Escolher cômodo
+        </button>
+
+        <button class="menu-option" type="button">
+            Gerenciar dispositivos
+        </button>
+
+        <button class="menu-option" type="button">
+            Desconectar-se
+        </button>
+
+    </div>
+
+    <!-- MENU DE CÔMODOS -->
+    <div class="room-menu" id="roomMenu">
+
+        <button class="close-menu" id="closeRoomMenu" type="button">
+            ✕
+        </button>
+
+        <h2>Escolher cômodo</h2>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='quarto.html'">
+            Quarto<br>
+            Principal
+        </button>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='sala.html'">
+            Sala
+        </button>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='cozinha.html'">
+            Cozinha
+        </button>
+
+        <button class="room-option" type="button"
+            onclick="window.location.href='dashboard.html'">
+            Dashboard<br>
+            Geral
+        </button>
+
+    </div>
 
     <div class="dashboard">
 
@@ -17,22 +77,29 @@
         <header class="header">
 
             <div class="header-left">
-                <div class="lampada">💡</div>
+
+                <div class="lampada">
+                    💡
+                </div>
+
                 <h1>Dashboard</h1>
+
             </div>
 
             <div class="header-right">
+
                 <span>Cozinha -</span>
 
-                <button class="menu-button">
+                <!-- BOTÃO HAMBÚRGUER -->
+                <button class="menu-button" type="button" onclick="abrirMenu()">
                     <i></i>
                     <i></i>
                     <i></i>
                 </button>
+
             </div>
 
         </header>
-
 
         <!-- CONTEÚDO -->
         <main class="main">
@@ -59,7 +126,6 @@
                 </div>
 
             </section>
-
 
             <!-- LADO DIREITO -->
             <section class="right-panel">
@@ -99,7 +165,6 @@
 
                     </div>
 
-
                     <!-- HORÁRIO DE PICO -->
                     <div class="chart-box bar-box">
 
@@ -128,7 +193,6 @@
                         </div>
 
                     </div>
-
 
                     <!-- TEMPO DE USO -->
                     <div class="chart-box bar-box time-box">
@@ -165,6 +229,9 @@
         </main>
 
     </div>
+
+    <!-- JAVASCRIPT DO MENU -->
+    <script src="js/menu.js"></script>
 
 </body>
 
