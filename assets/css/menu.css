@@ -1,0 +1,134 @@
+/* FUNDO DO MENU */
+
+.menu-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* MENU LATERAL */
+
+.side-menu,
+.room-menu {
+
+    position: fixed;
+
+    top: 0;
+    right: -350px;
+
+    width: 350px;
+    height: 100vh;
+
+    background: #4f86c6;
+
+    padding: 30px;
+
+    z-index: 1001;
+
+    transition: right 0.3s ease;
+
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* MENU ABERTO */
+
+.side-menu.active,
+.room-menu.active {
+    right: 0;
+}
+
+
+/* TÍTULOS */
+
+.side-menu h2,
+.room-menu h2 {
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    margin-top: 30px;
+
+    margin-bottom: 20px;
+}
+
+
+/* BOTÕES DO MENU */
+
+.side-menu button,
+.room-menu button {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #777;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* BOTÃO X */
+
+.side-menu #closeMenu,
+.room-menu #closeRoomMenu {
+
+    width: 45px;
+
+    margin-left: auto;
+
+    margin-top: 0;
+
+    font-size: 20px;
+}
+
+
+/* EFEITO DOS BOTÕES */
+
+.side-menu button:hover,
+.room-menu button:hover {
+    filter: brightness(1.08);
+}
+
+.side-menu button:active,
+.room-menu button:active {
+    transform: scale(0.99);
+}

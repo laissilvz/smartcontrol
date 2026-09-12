@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gerenciar Dispositivos</title>
+
+    <link rel="stylesheet" href="assets/css/gerenciar.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+</head>
+
+<body>
+
+    <header class="topo">
+
+        <div class="logo">
+
+            <div class="lampada">
+                💡
+            </div>
+
+            <span>
+                Gerenciar Dispositivos
+            </span>
+
+        </div>
+
+
+        <button
+            id="menuBtn"
+            class="menu-btn"
+            type="button"
+            onclick="abrirMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- FUNDO DO MENU -->
+
+    <div
+        id="menuOverlay"
+        class="menu-overlay">
+    </div>
+
+
+    <!-- MENU PRINCIPAL -->
+
+    <aside
+        id="sideMenu"
+        class="side-menu">
+
+        <button
+            id="closeMenu"
+            type="button">
+            ✕
+        </button>
+
+
+        <h2>
+            Menu
+        </h2>
+
+
+        <button
+            id="escolherComodo"
+            type="button">
+            Escolher cômodo
+        </button>
+
+
+        <button
+            type="button"
+            onclick="window.location.href='gerenciar.html'">
+            Gerenciar dispositivos
+        </button>
+
+
+        <button
+            type="button"
+            onclick="window.location.href='index.html'">
+            Desconectar-se
+        </button>
+
+    </aside>
+
+
+    <!-- MENU DE CÔMODOS -->
+
+    <aside
+        id="roomMenu"
+        class="room-menu">
+
+        <button
+            id="closeRoomMenu"
+            type="button">
+            ✕
+        </button>
+
+
+        <h2>
+            Escolher cômodo
+        </h2>
+
+
+        <button
+            type="button"
+            onclick="window.location.href='quarto.html'">
+            Quarto Principal
+        </button>
+
+
+        <button
+            type="button"
+            onclick="window.location.href='sala.html'">
+            Sala
+        </button>
+
+
+        <button
+            type="button"
+            onclick="window.location.href='cozinha.html'">
+            Cozinha
+        </button>
+
+    </aside>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="conteudo">
+
+        <div class="card-gerenciar">
+
+            <p>
+                Deseja adicionar ou<br>
+                remover dispositivo?
+            </p>
+
+
+            <button
+                class="btn cadastrar"
+                type="button"
+                onclick="window.location.href='cadastrar.html'">
+                Cadastrar<br>
+                dispositivo
+            </button>
+
+
+            <button
+                class="btn remover"
+                type="button"
+                onclick="window.location.href='remover.html'">
+                Remover<br>
+                dispositivo
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>

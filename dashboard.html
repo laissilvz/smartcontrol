@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+    <title>Dashboard Geral</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="titulo-dashboard">
+
+            <div class="icone-lampada">
+                💡
+            </div>
+
+            <h1>
+                Dashboard Geral
+            </h1>
+
+        </div>
+
+
+        <div class="acoes">
+
+            <button
+                id="temaBtn"
+                type="button">
+                🌙
+            </button>
+
+
+            <button
+                id="menuBtn"
+                type="button"
+                onclick="abrirMenu()">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <div id="menuOverlay">
+    </div>
+
+
+    <aside id="sideMenu">
+
+        <button
+            id="closeMenu"
+            type="button">
+            ✕
+        </button>
+
+
+        <h2>
+            Menu
+        </h2>
+
+
+        <button
+            id="escolherComodo"
+            type="button">
+            Escolher cômodo
+        </button>
+
+
+        <button
+            type="button"
+            onclick="window.location.href='gerenciar.html'">
+            Gerenciar dispositivos
+        </button>
+
+
+        <button
+            type="button"
+            onclick="desconectar()">
+            Desconectar-se
+        </button>
+
+    </aside>
+
+
+    <aside id="roomMenu">
+
+        <button
+            id="closeRoomMenu"
+            type="button">
+            ✕
+        </button>
+
+
+        <h2>
+            Escolher cômodo
+        </h2>
+
+
+        <button
+            type="button"
+            onclick="window.location.href='quarto.html'">
+            Quarto Principal
+        </button>
+
+
+        <button
+            type="button"
+            onclick="window.location.href='sala.html'">
+            Sala
+        </button>
+
+
+        <button
+            type="button"
+            onclick="window.location.href='cozinha.html'">
+            Cozinha
+        </button>
+
+    </aside>
+
+
+    <main>
+
+        <h2 id="saudacao"></h2>
+
+
+        <div class="busca">
+
+            <label for="campoBusca">
+                Buscar cômodo:
+            </label>
+
+
+            <input
+                type="text"
+                id="campoBusca"
+                placeholder="Digite o nome do cômodo...">
+
+        </div>
+
+
+        <p id="resultadoBusca"></p>
+
+
+        <ul id="listaComodos">
+
+            <li>
+
+                <div class="titulo-card">
+
+                    <h2>
+                        Quarto<br>
+                        Principal
+                    </h2>
+
+                </div>
+
+
+                <div class="parte-grafico">
+
+                    <div class="grafico">
+
+                        <div class="texto-grafico">
+                            Consumo<br>
+                            de energia
+                        </div>
+
+
+                        <div class="barras">
+
+                            <div class="barra barra1"></div>
+
+                            <div class="barra barra2"></div>
+
+                            <div class="barra barra3"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+
+            <li>
+
+                <div class="titulo-card">
+
+                    <h2>
+                        Sala
+                    </h2>
+
+                </div>
+
+
+                <div class="parte-grafico">
+
+                    <div class="grafico">
+
+                        <div class="texto-grafico">
+                            Consumo<br>
+                            de energia
+                        </div>
+
+
+                        <div class="barras">
+
+                            <div class="barra barra1"></div>
+
+                            <div class="barra barra2"></div>
+
+                            <div class="barra barra3"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+
+            <li>
+
+                <div class="titulo-card">
+
+                    <h2>
+                        Cozinha
+                    </h2>
+
+                </div>
+
+
+                <div class="parte-grafico">
+
+                    <div class="grafico">
+
+                        <div class="texto-grafico">
+                            Consumo<br>
+                            de energia
+                        </div>
+
+
+                        <div class="barras">
+
+                            <div class="barra barra1"></div>
+
+                            <div class="barra barra2"></div>
+
+                            <div class="barra barra3"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+
+            <li>
+
+                <div class="titulo-card">
+
+                    <h2>
+                        Outros<br>
+                        Comodos
+                    </h2>
+
+                </div>
+
+
+                <div class="parte-grafico">
+
+                    <div class="grafico">
+
+                        <div class="texto-grafico">
+                            Consumo<br>
+                            de energia
+                        </div>
+
+
+                        <div class="barras">
+
+                            <div class="barra barra1"></div>
+
+                            <div class="barra barra2"></div>
+
+                            <div class="barra barra3"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>
